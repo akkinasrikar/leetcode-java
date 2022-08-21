@@ -27,7 +27,7 @@ class Solution {
             for(int i=0;i<size;i++)
             {
                 TreeNode cur = que.poll();
-                vals.add(cur.val);
+                vals.add(i,cur.val);
                 if(cur.left!=null) que.offer(cur.left);
                 if(cur.right!=null) que.offer(cur.right);
             }
